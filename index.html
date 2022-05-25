@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Drag Drop</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <style>
+       
+        .box{
+            border: 1px solid grey;
+            width: 80px;
+            height: 80px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-right: 5px;
+        }
+        .drop{
+            border: 1px solid black;
+            height: 100px;
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+        }
+    </style>
+  </head>
+  <body>
+      <div class="container mt-3 mb-5">
+          <div class="row">
+              <div id="box1" class="col-1 box " draggable="true">1</div>
+              <div id="box2" class="col-1 box " draggable="true">2</div>
+              <div id="box3" class="col-1 box " draggable="true">3</div>
+              <div id="box4" class="col-1 box " draggable="true">4</div>
+              <div id="box5" class="col-1 box " draggable="true">5</div>
+              <div id="box6" class="col-1 box " draggable="true">6</div>
+              <div id="box7" class="col-1 box " draggable="true">7</div>
+              <div id="box8" class="col-1 box " draggable="true">8</div>
+              <div id="box9" class="col-1 box " draggable="true">9</div>
+              <div id="box10" class="col-1 box" draggable="true">10</div>
+              <div id="box11" class="col-1 box" draggable="true">11</div>
+              <div id="box12" class="col-1 box" draggable="true">12</div>
+          </div>
+      </div>
+
+      
+      <div class="container">
+          <div class="row">
+              <div class="col">Only 1-4</div>
+          </div>
+          <div class="row">
+            <div id="drop1" class=" col drop"></div>
+        </div> 
+      </div>
+      <div class="container">
+          <div class="row">
+              <div class="col">Only 5-8</div>
+          </div>
+          <div class="row">
+            <div id="drop2" class=" col drop"></div>
+        </div> 
+      </div>
+      <div class="container">
+          <div class="row">
+              <div class="col">Only 9-12</div>
+          </div>
+          <div class="row">
+            <div id="drop3" class="col drop"></div>
+        </div> 
+      </div>
+
+
+
+    <script src="app.js"></script>
+  </body>
+</html>
