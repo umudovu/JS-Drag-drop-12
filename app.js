@@ -10,6 +10,11 @@ dragboxAll.forEach(i => {
         //e.dataTransfer.setData("id", this.id);
         id = this.id;
     }
+    // i.ondrag = (event) => {
+    //     let x = event.clientX;
+    //     let y = event.clientY;
+    //     i.style.transform =`translate(${x+"px"},${y+"px"})`;
+    // }
 });
 
 
